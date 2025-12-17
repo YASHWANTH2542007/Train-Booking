@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Select Train</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="../P-7/style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="../P-7/images/favicon.ico">
+</head>
+<body style="background-image: url('https://images.unsplash.com/photo-1517949908115-7202b88a01b3');">
+  <div class="overlay d-flex justify-content-center align-items-center">
+    <div class="container-box col-md-8 animate__animated animate__fadeInDown">
+      <h2 class="text-center text-primary mb-4">Select Your Train</h2>
+      <div class="list-group shadow">
+        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center animate__animated animate__zoomIn" 
+                onclick="selectTrain('Express 101', '09:00 AM', 450)">
+          Express 101 <span class="badge bg-primary rounded-pill">₹450</span>
+        </button>
+        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center animate__animated animate__zoomIn"
+                onclick="selectTrain('SuperFast 202', '01:00 PM', 600)">
+          SuperFast 202 <span class="badge bg-success rounded-pill">₹600</span>
+        </button>
+        <button class="list-group-item list-group-item-action d-flex justify-content-between align-items-center animate__animated animate__zoomIn"
+                onclick="selectTrain('Shatabdi 303', '06:00 PM', 1200)">
+          Shatabdi 303 <span class="badge bg-danger rounded-pill">₹1200</span>
+        </button>
+      </div>
+    </div>
+  </div>
+
+  <script src="../P-7/script.js"></script>
+</body>
+</html>

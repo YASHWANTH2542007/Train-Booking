@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ticket Confirmation - RailEase</title>
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
+  <link rel="icon" href="../P-7/images/favicon.ico">
+  <style>
+    body {
+      background: url("../P-7/images/ticket-1539705_1920.jpg") no-repeat center center fixed;
+      background-size: cover;
+      font-family: Arial, sans-serif;
+    }
+    .ticket-card {
+      max-width: 420px;
+      margin: 50px auto;
+      background: #ffffffdd;
+      border-radius: 12px;
+      padding: 20px;
+      box-shadow: 0px 6px 15px rgba(0,0,0,0.3);
+    }
+    .ticket-card h3 {
+      text-align: center;
+      color: green;
+      font-weight: bold;
+    }
+    .ticket-card p {
+      margin: 4px 0;
+      font-size: 15px;
+    }
+    .qr-box {
+      text-align: center;
+      margin-top: 15px;
+    }
+    .pnr {
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+      color: #333;
+      margin-bottom: 10px;
+    }
+    .btn-home {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+    }
+    .btn-print {
+      display: block;
+      width: 100%;
+      margin-top: 10px;
+      border-radius: 8px;
+      background-color: #007bff;
+      color: #fff;
+    }
+    @media print {
+      body {
+        background: none !important;
+      }
+      .btn-home, .btn-print {
+        display: none !important;
+      }
+      .ticket-card {
+        box-shadow: none;
+        margin: 0;
+        max-width: 100%;
+        background: white;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="ticket-card animate__animated animate__slideInRight">
+    <h3 class="animate__animated animate__headShake animate__delay-2s">Booked Successfully!</h3>
+    <div id="pnr" class="pnr"></div>
+    <div id="ticketDetails"></div>
+    <p><b>Name:</b> <span id="pname"></span></p>
+    <p><b>Age:</b> <span id="page"></span></p>
+    <p><b>Gender:</b> <span id="pgender"></span></p>
+    <p><b>From:</b> <span id="pfrom"></span></p>
+    <p><b>To:</b> <span id="pto"></span></p>
+    <p><b>Date:</b> <span id="pdate"></span></p>
+    <p><b>Train:</b> <span id="ptrain"></span></p>
+    <div class="qr-box">
+      <img id="qrCode" alt="QR Code">
+    </div>
+    <button onclick="window.print()" class="btn btn-print">Print / Download Ticket</button>
+    <a href="../P-7/booking.html" class="btn btn-success btn-home">Book Again</a>
+  </div>
+
+  <script src="../P-7/script.js"></script>
+</body>
+</html>
