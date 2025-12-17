@@ -17,7 +17,7 @@ function selectTrain(name, time, fare) {
   journey.trainFare = fare;
 
   localStorage.setItem("journey", JSON.stringify(journey));
-  window.location.href = "../P-7/passenger.html";
+  window.location.href = "passenger.html";
 }
 
 // ==========================
@@ -71,7 +71,7 @@ function bookTicket(from, to, date, travelClass, trainName, trainTime, trainFare
     <p><b>Date:</b> ${date}</p>
     <p><b>Class:</b> ${travelClass}</p>
     <p><b>Fare:</b> ₹${trainFare}</p>
-    <a href="../P-7/passenger.html" class="btn btn-success mt-3">Continue →</a>
+    <a href="passenger.html" class="btn btn-success mt-3">Continue →</a>
   `;
 }
 
@@ -111,7 +111,7 @@ if (passengerForm) {
     localStorage.setItem("passenger", JSON.stringify({ name, age, gender }));
 
     // Redirect to payment
-    window.location.href = "../P-7/payment.html";
+    window.location.href = "payment.html";
   });
 }
 
@@ -133,7 +133,7 @@ if (paymentForm) {
     alert("Your OTP is: " + otp);
 
     // Redirect to OTP verification
-    window.location.href = "../P-7/otp.html";
+    window.location.href = "otp.html";
   });
 }
 
@@ -149,7 +149,7 @@ if (otpForm) {
 
     if (enteredOtp === storedOtp) {
       localStorage.removeItem("otp"); // clear OTP after use
-      window.location.href = "../P-7/sucess.html";
+      window.location.href = "sucess.html";
     } else {
       document.getElementById("otpMsg").textContent = "❌ Invalid OTP. Please try again.";
     }
@@ -184,3 +184,4 @@ if (window.location.pathname.includes("sucess.html")) {
   document.getElementById("qrCode").src =
     `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrData)}`;
 }
+
