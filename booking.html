@@ -1,17 +1,17 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!--<meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">-->
   <title>RailEase - Book Ticket</title>
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" 
         integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" 
         crossorigin="anonymous">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/>
-  <link rel="stylesheet" href="../P-7/style.css">
-  <link rel="icon" href="../P-7/images/favicon.ico">
+  <link rel="stylesheet" href="style.css">
+  <link rel="icon" href="favicon.ico">
 </head>
-<body style="background-image: url('../P-7/images/train-2264033_1920.jpg');">
+<body style="background-image: url('train-2264033_1920.jpg');">
   <div class="overlay d-flex justify-content-center align-items-center">
     <div class="container-box animate__animated animate__fadeInDown col-md-6">
       <h2 style="text-align: center;font-size: 50px;font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;color: green;" 
@@ -52,8 +52,9 @@
       localStorage.setItem("journey", JSON.stringify({ from, to, date }));
 
       // Redirect to train selection page
-      window.location.href = "../P-7/selecttrain.html";
+      window.location.href = "selecttrain.html";
     });
   </script>
 </body>
 </html>
+
