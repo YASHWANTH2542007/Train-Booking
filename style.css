@@ -2,7 +2,20 @@ body {
   font-family: Arial, sans-serif;
   margin: 0;
   background: #f4f8fb;
+  padding: 0;
+  min-height: 100vh;
+  background-size: cover;
+  background-position: center;
 }
+.overlay {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
 header {
   background: #1e3c72;
   color: white;
@@ -124,4 +137,46 @@ body {
 .detailsticket{
   color: black;
   opacity: 0.9;
+
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 2.2rem;
+  }
+
+  p {
+    font-size: 1.1rem;
+  }
+
+  .btn {
+    font-size: 1rem;
+    padding: 10px 30px;
+  }
+
+  .container {
+    padding: 15px;
+  }
+}
+@media (max-width: 480px) {
+  h1 {
+    font-size: 1.8rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+
+  .btn {
+    font-size: 0.95rem;
+    padding: 8px 25px;
+  }
+
+  .container {
+    padding: 10px;
+  }
+
+  input,
+  select {
+    font-size: 0.9rem;
+  }
 }
