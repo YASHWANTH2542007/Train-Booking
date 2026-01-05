@@ -4,7 +4,7 @@
 const trains = [
   { name: "Express 101", time: "09:00 AM", fare: 450 },
   { name: "SuperFast 202", time: "01:00 PM", fare: 600 },
-  { name: "Shatabdi 303", time: "06:00 PM", fare: 1200 }
+  { name: "Intercity 303", time: "06:00 PM", fare: 1200 }
 ];
 
 // ==========================
@@ -184,4 +184,5 @@ if (window.location.pathname.includes("sucess.html")) {
   document.getElementById("qrCode").src =
     `https://api.qrserver.com/v1/create-qr-code/?size=150x150&data=${encodeURIComponent(qrData)}`;
 }
+
 
